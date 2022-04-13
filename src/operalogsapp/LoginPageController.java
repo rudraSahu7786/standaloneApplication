@@ -51,15 +51,17 @@ public class LoginPageController implements Initializable {
 
     @FXML
     private void OnSubmit(ActionEvent event) {
-        String databaseuser=username.getText();
+        String databaseuser=username.getText().toUpperCase();
         
         String databasepassword=password.getText();
+        Integer portNumber= Integer.parseInt(port_number.getText());
+        String serviceName=service_name.getText();
 //    
         
       
             System.out.println("NoNoNo");
             
-            Connection con=databaseConnection.getDBConnection(databaseuser,databasepassword);
+            Connection con=databaseConnection.getDBConnection(databaseuser,databasepassword,portNumber,serviceName);
             
             System.out.println(con==null);
             System.out.println("yes");

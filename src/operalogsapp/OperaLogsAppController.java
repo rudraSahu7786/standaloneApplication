@@ -8,6 +8,7 @@ package operalogsapp;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
+
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
@@ -25,6 +26,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.text.Text;
 
 /**
  *
@@ -50,6 +52,8 @@ public class OperaLogsAppController implements Initializable {
     @FXML
     private TableColumn<modal, String> resortCol;
     ObservableList<modal> modalObservableList=FXCollections.observableArrayList();
+   
+    
     
    
     @Override
@@ -62,6 +66,7 @@ public class OperaLogsAppController implements Initializable {
             connectDB=databaseConnection.con;
             Statement statement=connectDB.createStatement();
             ResultSet rs=statement.executeQuery(query);
+            
             
             while(rs.next()){
                 ///string --

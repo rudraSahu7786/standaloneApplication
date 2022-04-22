@@ -54,12 +54,14 @@ public class LoginPageController implements Initializable {
         String databaseuser=username.getText();
         
         String databasepassword=password.getText();
+         Integer portNumber= Integer.parseInt(port_number.getText());
+        String serviceName=service_name.getText();
 //    
         
       
             System.out.println("NoNoNo");
             
-            Connection con=databaseConnection.getDBConnection(databaseuser,databasepassword);
+            Connection con=databaseConnection.getDBConnection(databaseuser,databasepassword,portNumber,serviceName);
             
             System.out.println(con==null);
             System.out.println("yes");

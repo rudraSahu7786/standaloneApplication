@@ -41,7 +41,7 @@ public class databaseConnection {
     
   
     
-    public static Connection getDBConnection(String username, String password){
+    public static Connection getDBConnection(String username, String password, Integer portNumber, String serviceName){
         
 		
         try {
@@ -52,7 +52,7 @@ public class databaseConnection {
             
             //Open the connection
             
-            con=DriverManager.getConnection("jdbc:oracle:thin:@//NPLSEAPP16.us.oracle.com:1521/OPERA",username ,password );
+            con=DriverManager.getConnection("jdbc:oracle:thin:@//NPLSEAPP16.us.oracle.com:"+Integer.toString(portNumber)+"/"+serviceName,username ,password  );
 //            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","V50600_HOTEL" ,"V50600_HOTEL" );
             
             System.out.println("DriverManager connected to db");

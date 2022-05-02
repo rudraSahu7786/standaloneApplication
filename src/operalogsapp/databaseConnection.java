@@ -46,13 +46,14 @@ public class databaseConnection {
 		
         try {
             //Register the JDBC driver
-            Class.forName("oracle.jdbc.driver.OracleDriver");
+           System.out.println("before className"); 
+            Class.forName("org.sqlite.JDBC");
             System.out.println(con==null);
             System.out.println("Registered to the JDBC driver");
             
             //Open the connection
             
-            con=DriverManager.getConnection("jdbc:oracle:thin:@//NPLSEAPP16.us.oracle.com:"+Integer.toString(portNumber)+"/"+serviceName,username ,password  );
+            con=DriverManager.getConnection("jdbc:sqlite:FinalProjectDemo.db");
 //            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","V50600_HOTEL" ,"V50600_HOTEL" );
             
             System.out.println("DriverManager connected to db");

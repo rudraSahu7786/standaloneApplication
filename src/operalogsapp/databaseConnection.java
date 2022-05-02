@@ -53,7 +53,7 @@ public class databaseConnection {
             
             //Open the connection
             
-            con=DriverManager.getConnection("jdbc:sqlite:FinalProjectDemo.db");
+            con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\absasahu\\Documents\\db\\sqlite.db");
 //            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","V50600_HOTEL" ,"V50600_HOTEL" );
             
             System.out.println("DriverManager connected to db");

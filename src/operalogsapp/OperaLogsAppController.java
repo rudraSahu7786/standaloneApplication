@@ -56,12 +56,15 @@ public class OperaLogsAppController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
        
         
-        String query="select * from opera_logs FETCH FIRST 100 ROWS ONLY ";
+        String query="select * from FinalProjectDemo";
         try {
             Connection connectDB;
             connectDB=databaseConnection.con;
             Statement statement=connectDB.createStatement();
+            System.out.println("statement created");
             ResultSet rs=statement.executeQuery(query);
+            System.out.println("resultset created");
+            
             
             while(rs.next()){
                 ///string --

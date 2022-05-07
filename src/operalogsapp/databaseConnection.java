@@ -52,11 +52,12 @@ public class databaseConnection {
             System.out.println("Registered to the JDBC driver");
             
             //Open the connection
-            
-            con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\absasahu\\Documents\\db\\sqlite.db");
+            if("V50700_HOTEL".equals(username) && "V50700_HOTEL".equals(password) && portNumber==1521 && "opera".equals(serviceName)){
+                con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\absasahu\\Documents\\db\\sqlite.db");
 //            con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","V50600_HOTEL" ,"V50600_HOTEL" );
+                System.out.println("DriverManager connected to db");
+            }
             
-            System.out.println("DriverManager connected to db");
             //jdbc:oracle:thin:@//wfivm01801.us.oracle.com:1521/OPERA
 //            con = DriverManager.getConnection("jdbc:oracle:thin:@//NPLSEAPP16.us.oracle.com:1521/OPERA", "SMOKE_ASP", "SMOKE_ASP");
 

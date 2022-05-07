@@ -18,6 +18,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -38,6 +39,8 @@ public class LoginPageController implements Initializable {
     private TextField password;
     @FXML
     private TextField service_name;
+    @FXML
+    private Label label;
 
     /**
      * Initializes the controller class.
@@ -62,7 +65,9 @@ public class LoginPageController implements Initializable {
             System.out.println("NoNoNo");
             
             Connection con=databaseConnection.getDBConnection(databaseuser,databasepassword,portNumber,serviceName);
-            
+            if(con==null){
+                label.setText("Invalid credentials");
+            }
             System.out.println(con==null);
             System.out.println("yes");
             if(con!= null){

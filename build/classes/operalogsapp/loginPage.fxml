@@ -41,6 +41,11 @@
             <Button mnemonicParsing="false" onAction="#OnSubmit" text="Submit" />
           </children>
         </HBox>
+        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0">
+          <children>
+            <Label fx:id="label" text="" />
+          </children>
+        </HBox>
       </children>
     </VBox>
   </children>

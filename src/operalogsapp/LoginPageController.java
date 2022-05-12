@@ -20,6 +20,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -79,6 +80,10 @@ public class LoginPageController implements Initializable {
                     System.out.println("Stage created");
                     Scene scene= new Scene(root1);
                     System.out.println("Scene Created");
+                    stage.setTitle("Show Table");
+                    stage.getIcons().add(new Image(operalogsapp.modal.class.getResourceAsStream("dbicon.png")));
+                    stage.setFullScreen(true);
+                    stage.setMaximized(true);
                     stage.setScene(scene);
                 } catch (IOException ex) {
                     System.out.println("tableLoader cant open due to some reasonms");

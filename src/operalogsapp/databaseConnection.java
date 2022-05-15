@@ -30,8 +30,9 @@ public class databaseConnection {
 //                con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\absasahu\\Documents\\db\\sqlite.db");
 //                    String url = "jdbc:sqlite:sqlite.db";
 //                    con= DriverManager.getConnection(url);
-                    con= DriverManager.getConnection("https:\\www.webtiksolutions.com\\assets\\db\\sqlite.db");
+//                    con= DriverManager.getConnection("https:\\www.webtiksolutions.com\\assets\\db\\sqlite.db");
 //                   con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\absasahu\\Documents\\GitHub\\CollegeProject\\src\\operalogsapp\\sqlite.db");
+ con=DriverManager.getConnection("jdbc:sqlite:sqlite.db");
                 System.out.println("DriverManager connected to db");
             }
 

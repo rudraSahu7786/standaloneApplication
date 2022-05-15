@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="finalStandAloneApp.jar" size="157308" download="eager" />
+    <jar href="finalStandAloneApp.jar" size="157146" download="eager" />
     <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
     <jar href="lib\ojdbc6.jar" size="1988051" download="eager" />
     <jar href="lib\sqlite-jdbc-3.7.2.jar" size="3201133" download="eager" />

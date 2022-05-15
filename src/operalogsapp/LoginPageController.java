@@ -76,15 +76,18 @@ public class LoginPageController implements Initializable {
                 try {
                     root1 = FXMLLoader.load(getClass().getResource("tableLoader.fxml"));
                     System.out.println("fxml loaded");
-                    Stage stage=(Stage)password.getScene().getWindow();
+                    Stage stage = new Stage();
+                    Stage stage1=(Stage)password.getScene().getWindow();
                     System.out.println("Stage created");
                     Scene scene= new Scene(root1);
                     System.out.println("Scene Created");
-                    stage.setTitle("Show Table");
+                    stage.setTitle("Search Opera Logs");
                     stage.getIcons().add(new Image(operalogsapp.modal.class.getResourceAsStream("dbicon.png")));
-                    stage.setFullScreen(true);
                     stage.setMaximized(true);
+                    
                     stage.setScene(scene);
+                    stage.show();
+                    stage1.close();
                 } catch (IOException ex) {
                     System.out.println("tableLoader cant open due to some reasonms");
                 }

@@ -29,7 +29,8 @@ public class OperaLogsApp extends Application {
         stage.setScene(scene);
         stage.setTitle("Login Page");
         stage.getIcons().add(new Image(operalogsapp.modal.class.getResourceAsStream("oracle.png")));
-        stage.setFullScreen(true);
+//        stage.setFullScreen(true);
+        
         stage.show();
     }
 

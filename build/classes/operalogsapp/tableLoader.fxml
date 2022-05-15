@@ -9,7 +9,7 @@
 
 <GridPane alignment="CENTER" gridLinesVisible="false" prefHeight="586.0" prefWidth="910.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="operalogsapp.OperaLogsAppController">
   <children>
-    <VBox alignment="CENTER" fillWidth="true" prefHeight="144.0" prefWidth="909.9999000000025" GridPane.columnIndex="0" GridPane.rowIndex="0">
+    <VBox alignment="CENTER" fillWidth="true" prefHeight="144.0" prefWidth="909.9999000000025" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.vgrow="ALWAYS">
       <children>
         <Text scaleX="0.9501496664076736" scaleY="0.7828976123410668" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Opera Logs" textAlignment="CENTER">
           <font>
@@ -19,7 +19,7 @@
         <TextField fx:id="keywordTextField" cache="true" prefHeight="30.0" prefWidth="658.0" text="Keywords" />
       </children>
     </VBox>
-    <TableView fx:id="table" focusTraversable="true" prefHeight="451.0" prefWidth="910.0" visible="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+    <TableView fx:id="table" focusTraversable="true" prefHeight="451.0" prefWidth="910.0" visible="true" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
       <columns>
         <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="310.0" resizable="false" text="CHAIN_CODE" fx:id="chainCodeCol" />
         <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="310.0" resizable="false" text="SEQ_NO" fx:id="seq_noCol" />

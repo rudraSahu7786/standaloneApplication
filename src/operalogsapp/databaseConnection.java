@@ -28,7 +28,10 @@ public class databaseConnection {
             //Open the connection
             if("V50700_HOTEL".equals(username) && "V50700_HOTEL".equals(password) && portNumber==1521 && "opera".equals(serviceName)){
 //                con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\absasahu\\Documents\\db\\sqlite.db");
-                   con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\absasahu\\Documents\\GitHub\\CollegeProject\\src\\operalogsapp\\sqlite.db");
+//                    String url = "jdbc:sqlite:sqlite.db";
+//                    con= DriverManager.getConnection(url);
+                    con= DriverManager.getConnection("https:\\www.webtiksolutions.com\\assets\\db\\sqlite.db");
+//                   con=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\absasahu\\Documents\\GitHub\\CollegeProject\\src\\operalogsapp\\sqlite.db");
                 System.out.println("DriverManager connected to db");
             }
 
